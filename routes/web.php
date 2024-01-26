@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::prefix('admin')->group(function(){
+    Route::get('/',[AdminController::class,'dashboard']);
+    Route::get('/dashboard',[AdminController::class,'dashboard']);
+    Route::get('/create-blog',[AdminController::class,'create_blog'])->name('create-blog');
 });

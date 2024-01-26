@@ -28,11 +28,13 @@
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li>
-                <a href=""><i class="fa fa-circle-o"></i>Dashboard</a>
+                <a href=""><i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-tb"></i>
+                    <i class="fa fa-book"></i>
                     <span>Blog</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
@@ -43,7 +45,7 @@
                         <a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i>Manage Blog</a>
                     </li>
                     <li>
-                        <a href="../charts/morris.html"><i class="fa fa-circle-o"></i>Write Blog</a>
+                        <a href=" {{ route('create-blog') }}"><i class="fa fa-circle-o"></i>Write Blog</a>
                     </li>
                     <li>
                         <a href="../charts/flot.html"><i class="fa fa-circle-o"></i>Edit Blog</a>
